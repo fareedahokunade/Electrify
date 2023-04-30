@@ -1,5 +1,6 @@
 # Electrify
 Electricity Shortfall Predictor
+link to deployed app: https://fareedahokunade-electrify-model-1ugmhn.streamlit.app/
 This is a simple application that predicts electricity shortfall based on certain features. You can host this application either on a local server or on the cloud using the following steps:
 
 Local Server Hosting
