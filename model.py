@@ -32,7 +32,7 @@ def predict(Seville_temp_max, Madrid_pressure, Valencia_temp_max, Valencia_temp,
     return prediction
 
 
-st.title('Electricity Shortage Predictor')
+st.title('Electricity Shortfall Predictor')
 st.image("""https://t3.ftcdn.net/jpg/02/99/23/72/360_F_299237262_Cj3wYz3HK7Aak1qNW4biP268qL1wphOr.jpg""")
 st.header('Enter the features:')
 
@@ -57,9 +57,9 @@ Madrid_temp_min = st.number_input('Madrid_temp_min:', min_value=264.9833333333, 
 load_shortfall_3h = st.number_input('load_shortfall_3h:', min_value=-6618.0, max_value=31904.0)
 
 
-if st.button('Predict amount of shortage'):
+if st.button('Predict Electricity Shortfall'):
     shortage = predict(Seville_temp_max, Madrid_pressure, Valencia_temp_max, Valencia_temp, Bilbao_weather_id,
              Seville_temp, Valencia_temp_min, Barcelona_temp_max, Madrid_temp_max, Barcelona_temp,
              Bilbao_temp_min, Bilbao_temp, Barcelona_temp_min, Bilbao_temp_max, Seville_temp_min,
              Madrid_temp, Madrid_temp_min)
-    st.success(f'The predicted amount of shortage is {shortage[0]:.4f}')
+    st.success(f'The predicted electricity shortfall is {shortage[0]:.4f}')
